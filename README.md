@@ -34,7 +34,7 @@ Secured VWAN hub ( Azure Firewall Premium )
 
 ## Combined traffic via Secured VHUB
 
-As a result of deploying VMSS in hub and spokes, we can generate 160Gbps through Azure Firewall. 
+As a result of deploying VMSS in hub and spokes, we can generate 190 Gbps through Azure Firewall. 
 
 ![Traffic](supplementals/img/AZFWP-22-instances.png)
 

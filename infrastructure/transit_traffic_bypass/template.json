@@ -1,0 +1,43 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {},
+    "resources": [
+        {
+            "type": "Microsoft.Network/virtualHubs/hubVirtualNetworkConnections",
+            "apiVersion": "2021-01-01",
+            "name": "vhub0-centralus/centralus-1",
+            "location": "centralus",
+            "dependsOn": [],
+            "properties": {
+                "provisioningState": "Succeeded",
+                "resourceGuid": "ab0b319b-59e7-4217-97cf-fcdbe6f928c7",
+                "routingConfiguration": {
+                    "associatedRouteTable": {
+                        "id": "/subscriptions/7a06e974-7329-4485-87e7-3211b06c15aa/resourceGroups/VWAN001/providers/Microsoft.Network/virtualHubs/vhub0-centralus/hubRouteTables/defaultRouteTable"
+                    },
+                    "propagatedRouteTables": {
+                        "labels": [
+                            "default"
+                        ],
+                        "ids": [
+                            {
+                                "id": "/subscriptions/7a06e974-7329-4485-87e7-3211b06c15aa/resourceGroups/VWAN001/providers/Microsoft.Network/virtualHubs/vhub0-centralus/hubRouteTables/defaultRouteTable"
+                            }
+                        ]
+                    },
+                    "vnetRoutes": {
+                        "staticRoutes": []
+                    }
+                },
+                "remoteVirtualNetwork": {
+                    "id": "/subscriptions/7a06e974-7329-4485-87e7-3211b06c15aa/resourceGroups/VWAN001/providers/Microsoft.Network/virtualNetworks/centralus-1"
+                },
+                "allowHubToRemoteVnetTransit": true,
+                "allowRemoteVnetToUseHubVnetGateways": true,
+                "enableInternetSecurity": false,
+                "connectivityStatus": "Connected"
+            }
+        }
+    ]
+}
